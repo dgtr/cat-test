@@ -1,0 +1,130 @@
+@font-face {
+  font-weight: 400;
+  font-family: "Oswald";
+  font-style: normal;
+
+  src: url("../fonts/oswald-regular-webfont.woff2") format("woff2"),
+  url("../fonts/oswald-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Oswald";
+  font-style: normal;
+
+  src: url("../fonts/oswald-medium-webfont.woff2") format("woff2"),
+  url("../fonts/oswald-medium-webfont.woff") format("woff");
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Arial", "Verdana", sans-serif;
+  color: #444444;
+
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header {
+  position: relative;
+
+  margin: 0 auto;
+
+  background-color: #ffffff;
+}
+
+.page-header__logo {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 66px;
+  margin: 0;
+  padding: 0 20px;
+
+  /* border-bottom: 1px solid #e6e6e6; */
+}
+
+.page-header__logo-image {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header__text {
+  margin: 0 auto;
+  padding: 0;
+  padding-right: 78px;
+  padding-left: 20px;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0 20px;
+  padding: 0;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 64px;
+  height: 66px;
+  margin: 0;
+  padding: 0;
+
+  font-size: 0;
+
+  background-color: transparent;
+  background-image: linear-gradient(
+  #222222 12%,
+  transparent 12%,
+  transparent 44%,
+  #222222 44%,
+  #222222 56%,
+  transparent 56%,
+  transparent 88%,
+  #222222 88%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 18px;
+  border: none;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  width: 100%;
+}
